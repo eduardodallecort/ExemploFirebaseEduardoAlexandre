@@ -1,10 +1,11 @@
 package br.edu.unisep.exemplofb.ui.register
-
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import br.edu.unisep.exemplofb.databinding.ActivityRegisterBinding
+import br.edu.unisep.exemplofb.ui.register.viewmodel.RegisterUserViewModel
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -12,18 +13,16 @@ import com.google.firebase.ktx.Firebase
 
 class RegisterActivity : AppCompatActivity() {
 
+    private val viewModel by viewModels<RegisterUserViewModel>()
+
     private val binding: ActivityRegisterBinding by lazy {
         ActivityRegisterBinding.inflate(layoutInflater)
     }
-
     private lateinit var fbAuth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
         this.fbAuth = Firebase.auth
-
         binding.btnSave.setOnClickListener { saveNewUser() }
     }
 
@@ -39,10 +38,13 @@ class RegisterActivity : AppCompatActivity() {
                 error.printStackTrace()
                 Snackbar.make(binding.root, "Erro ao cadastrar usuário!", Snackbar.LENGTH_LONG).show()
             }
+        var message = viewModel.save(username, password)
+
+        Snackbar.make(binding.root, message, Snackbar.LENGTH_LONG).show()
+
     }
 
     companion object {
         fun newIntent(context: Context) = Intent(context, RegisterActivity::class.java)
     }
-
 }
