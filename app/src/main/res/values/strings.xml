@@ -17,4 +17,8 @@
     <string name="homeMessage">Logado como %s</string>
 
     <string name="defaultNotificationChannelId">defaultChannel</string>
+
+    <string name="splashScreenMessage">Exemplo Firebase</string>
+
+    <string name="splashScreenLoading">Carregando...</string>
 </resources>
