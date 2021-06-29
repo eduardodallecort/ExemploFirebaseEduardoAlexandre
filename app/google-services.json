@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219839333349",
+    "project_id": "exemplofirebase2021eduardo",
+    "storage_bucket": "exemplofirebase2021eduardo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219839333349:android:d32cd5c4990d23c580250c",
+        "android_client_info": {
+          "package_name": "br.edu.unisep.exemplofb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219839333349-gljtio78elmol74316o8bgiif0fa7l8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEHj3QD6-SSEHnisZyygEZC-k1UJWLb1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219839333349-gljtio78elmol74316o8bgiif0fa7l8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

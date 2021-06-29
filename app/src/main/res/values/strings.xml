@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ExemploFirebase</string>
+
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name="actionLogin">Entrar</string>
+    <string name="actionNotRegistered">Não sou cadastrado</string>
+    <string name="actionRegister">Salvar</string>
+
+    <string name="titleLogin">Login</string>
+    <string name="titleRegister">Cadastre-se</string>
+
+    <string name="rememberUser">Manter conectado</string>
+
+    <string name="actionLogout">Logout</string>
+
+    <string name="homeMessage">Logado como %s</string>
+
+    <string name="defaultNotificationChannelId">defaultChannel</string>
+</resources>
